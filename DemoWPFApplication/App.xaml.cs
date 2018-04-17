@@ -9,7 +9,8 @@
     {
         public App()
         {
-
+            // TODO: Figure out how to make this use the BaseApplication class
+            // in order to handle command arguments
         }
     }
 }
