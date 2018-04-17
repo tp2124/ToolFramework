@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Microsoft.Extensions.CommandLineUtils;
+using System;
 
-using TP.Editor.CmdArg;
 using TP.Services;
 
 namespace TP.Editor.Application
@@ -23,7 +23,6 @@ namespace TP.Editor.Application
         #endregion
 
         #region Fields
-        private CmdArgService _argumentService;
         #endregion
 
         /// <summary>
@@ -31,10 +30,38 @@ namespace TP.Editor.Application
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
-        protected virtual EExitCode ApplicationMain(string[] args, CmdArgOption[] supportedCmdArgs)
+        protected virtual EExitCode ApplicationMain(string[] args)
         {
-            _argumentService = new CmdArgService(args, supportedCmdArgs);
+            //CommandLineApplication commandLineApplication =
+            //       new CommandLineApplication(throwOnUnexpectedArg: false);
+            //CommandArgument names = null;
+            //commandLineApplication.Command("name",
+            //  (target) =>
+            //    names = target.Argument(
+            //      "fullname",
+            //      "Enter the full name of the person to be greeted.",
+            //      multipleValues: true));
+            //CommandOption greeting = commandLineApplication.Option(
+            //  "-$|-g |--greeting <greeting>",
+            //  "The greeting to display. The greeting supports"
+            //  + " a format string where {fullname} will be "
+            //  + "substituted with the full name.",
+            //  CommandOptionType.SingleValue);
+            //CommandOption uppercase = commandLineApplication.Option(
+            //  "-u | --uppercase", "Display the greeting in uppercase.",
+            //  CommandOptionType.NoValue);
+            //commandLineApplication.HelpOption("-? | -h | --help");
+            //if (commandLineApplication.OptionHelp.HasValue())
+            //{
+
+            //}
+
             return RunProgram();
+        }
+
+        protected virtual string GetHelpString()
+        {
+            return "The user has asked for helpful instructions.";
         }
 
 
@@ -45,19 +72,16 @@ namespace TP.Editor.Application
             {
                 return default(T);
             }
-            else if (result is CmdArgService)
-            {
-                return (T)result;
-            }
             return default(T);
         }
 
+        /// <summary>
+        /// Implementation for Dependency Injection support
+        /// </summary>
+        /// <param name="serviceType"></param>
+        /// <returns></returns>
         public virtual object GetService(Type serviceType)
         {
-            if (serviceType == typeof(CmdArgService))
-            {
-                return _argumentService;
-            }
             return null;
         }
 

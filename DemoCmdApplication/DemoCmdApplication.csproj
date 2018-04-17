@@ -62,9 +62,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeneralLibs\TP.Editor\TP.Editor.csproj">
+    <ProjectReference Include="..\GeneralLibs\TP.Editor\TP.Base.csproj">
       <Project>{624bcb41-f6bd-4f6a-9712-9506165a1bb4}</Project>
-      <Name>TP.Editor</Name>
+      <Name>TP.Base</Name>
     </ProjectReference>
     <ProjectReference Include="..\GeneralLibs\TP.Services.Format\TP.Services.Format.csproj">
       <Project>{cf56a7b3-193f-4f6d-ad67-c2031ab7c4b7}</Project>

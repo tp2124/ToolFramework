@@ -1,6 +1,5 @@
 ﻿using System;
 using TP.Editor.Application;
-using TP.Editor.CmdArg;
 using TP.Services.Format;
 
 namespace DemoCmdApplication
@@ -25,7 +24,7 @@ namespace DemoCmdApplication
         static int Main(string[] args)
         {
             CustomApplication appInstance = new CustomApplication();
-            return (int)appInstance.ApplicationMain(args, new CmdArgOption[] { });
+            return (int)appInstance.ApplicationMain(args);
         }
 
         protected override void Execute()

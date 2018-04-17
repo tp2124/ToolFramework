@@ -6,3 +6,4 @@ TestingReadOnlyVsConst/
 *.suo
 *.lock
 *.ide*
+packages/*

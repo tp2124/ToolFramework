@@ -1,0 +1,10 @@
+﻿<wpf:WPFApplication x:Class="DemoWPFApplication.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DemoWPFApplication"
+             xmlns:wpf="clr-namespace:TP.Editor.WPF.Application;assembly=TP.Editor.WPF"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</wpf:WPFApplication>
