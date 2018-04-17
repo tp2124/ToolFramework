@@ -62,15 +62,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeneralLibs\TP.Editor\TP.Base.csproj">
-      <Project>{624bcb41-f6bd-4f6a-9712-9506165a1bb4}</Project>
+    <ProjectReference Include="..\..\CoreLibraries\TP.Base\TP.Base.csproj">
+      <Project>{158ea1c9-fd17-4ebe-9329-367803deffda}</Project>
       <Name>TP.Base</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GeneralLibs\TP.Services.Format\TP.Services.Format.csproj">
+    <ProjectReference Include="..\..\Services\TP.Services.Format\TP.Services.Format.csproj">
       <Project>{cf56a7b3-193f-4f6d-ad67-c2031ab7c4b7}</Project>
       <Name>TP.Services.Format</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GeneralLibs\TP.Services\TP.Services.csproj">
+    <ProjectReference Include="..\..\Services\TP.Services\TP.Services.csproj">
       <Project>{a5712c85-f36c-4dd6-bad7-f23d3e351032}</Project>
       <Name>TP.Services</Name>
     </ProjectReference>

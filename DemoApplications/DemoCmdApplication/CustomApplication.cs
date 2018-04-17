@@ -1,5 +1,5 @@
 ﻿using System;
-using TP.Editor.Application;
+using TP.Base.Application;
 using TP.Services.Format;
 
 namespace DemoCmdApplication

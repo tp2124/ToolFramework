@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TP.Editor.Application
+namespace TP.Base.Application
 {
     /// <summary>
     /// [TODO] Consider moving the Application Init/Execute/Shutdown commands to Base. 

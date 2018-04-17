@@ -1,4 +1,4 @@
-﻿namespace TP.Editor.Application
+﻿namespace TP.Base.Application
 {
     public enum EExitCode
     {

@@ -1,15 +1,15 @@
-﻿using Microsoft.Extensions.CommandLineUtils;
-using System;
+﻿
 
-using TP.Services;
-
-namespace TP.Editor.Application
+namespace TP.Base.Application
 {
+    using Microsoft.Extensions.CommandLineUtils;
+    using System;
+    using TP.Services;
     /// <summary>
     /// TODO: Have this be able to accept and properly maintain command arguments
     /// for both UI and cmd applications.
     /// </summary>
-    public abstract class BaseApplication : ICastedServiceProvider
+    public abstract class BaseApplication 
     {
         #region Properties
         private string _applicationName;

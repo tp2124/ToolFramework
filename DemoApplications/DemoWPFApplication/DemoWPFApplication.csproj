@@ -103,7 +103,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TP.Editor.WPF\TP.Editor.WPF.csproj">
+    <ProjectReference Include="..\..\Editor\TP.Editor.WPF\TP.Editor.WPF.csproj">
       <Project>{e95f645f-6d7e-49a7-a5d2-71bcff762dac}</Project>
       <Name>TP.Editor.WPF</Name>
     </ProjectReference>
