@@ -1,2 +1,2 @@
 # ToolFramework
-General C# Application Framework
+General C# Application Framework (for generic applications)
